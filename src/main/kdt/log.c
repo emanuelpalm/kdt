@@ -37,6 +37,7 @@ void log_Init() {
 }
 
 noreturn void log_PanicCF(log_Context context, const char *format, ...) {
+    mtx_Lock(&_lock);
     _LOG(context, stderr, MAGENTA("PANIC"), format);
     exit(EXIT_FAILURE);
 }
