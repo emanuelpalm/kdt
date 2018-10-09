@@ -1,4 +1,4 @@
-# Kademlia Peer Implementation
+# A Kademlia System
 
 This repository contains a partially implemented node for a DHT based on
 Kademlia. It uses LMDB for file storage and OpenSSL for generating safe random
@@ -59,8 +59,8 @@ respectively.
 
 The `cmake/` folder contains CMAKE modules.
 
-The `src/main/kdt/` folder contains all project folders, which in turn
-significantly contains the following files and directories:
+The `src/main/` folder contains the application code. Significantly, it
+contains the following entries:
 
 | Entry    | Description                                                     |
 |:---------|:----------------------------------------------------------------|
